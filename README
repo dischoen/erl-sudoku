@@ -1,9 +1,15 @@
 Erlang Sudoku solver
 
+This is my first real program in Erlang, so please by merciful.
+
 Version 0.something
 
 Right now it can solve standard 9x9 solvable sudokus, i.e,
 sudokus which are not under-determined.
+I did not use any OTP functions, just plain erlang.
+There is one central process to handle user functions and
+9x9 cell processes. The cells communicate via the central process
+and broadcast any state changes.
 
 It is a plain erlang file, so you have to compile it by hand.
 
