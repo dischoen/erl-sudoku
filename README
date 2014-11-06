@@ -1,0 +1,27 @@
+Erlang Sudoku solver
+
+Version 0.something
+
+Right now it can solve standard 9x9 solvable sudokus, i.e,
+sudokus which are not under-determined.
+
+It is a plain erlang file, so you have to compile it by hand.
+
+A sudoku is internally represented by a 9x9 matrix, all
+accessor functions work with row, column parameters.
+e.g.
+  set(1,2,3)
+sets the cell in row 1 and column 2 to the value 3.
+
+Usage:
+c(sudoku).
+sudoku:start().
+sudoku:set(1,2,4). % sets cell[1,2] to value 4
+[..]
+sudoku:printClean().
+
+
+TODO:
+ - documentation
+ - wx GUI
+ - there was something else..
